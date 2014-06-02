@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class MQTTService extends Service {
 
-    public static final String BROKER_URL = "tcp://192.168.2.100:1883";
+    public static final String BROKER_URL = "tcp://192.168.1.73:1883";
 
     public static final String clientId = "android-client";
 

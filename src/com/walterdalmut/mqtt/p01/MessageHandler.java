@@ -36,7 +36,7 @@ public class MessageHandler implements MqttCallback {
         final PendingIntent activity = PendingIntent.getActivity(context, 0, intent, 0);
         
     	Notification n  = new Notification.Builder(this.context)
-        	.setContentTitle("New message: " +  new String(message.getPayload()))
+        	.setContentTitle(new String(message.getPayload()))
         	.setContentText("MQTT Message")
         	.setSmallIcon(R.drawable.snow)
         	.setContentIntent(activity)
